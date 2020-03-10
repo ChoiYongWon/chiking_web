@@ -171,6 +171,7 @@ ul.container{
 
 .area{
     width: 90%;
+    z-index: -1;
    
 }
 
@@ -181,6 +182,7 @@ ul.container{
     width: 90%;
     height: 96%;
     overflow: hidden;
+    z-index: -1;
 }
 
 .circles li{
