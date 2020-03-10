@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,12 +22,12 @@
             </ul>
         </div>
     </div>
-    <div class="count">
-        투표인원 : 1,732,923명
+    <div class="count-wrap">
+        투표인원 : <span id="count">0</span> 명
     </div>
     <div class="input-field">
         <i class="material-icons">search</i>
-        <input type="text" class="search">
+        <input type="text" class="search" placeholder="ex) 갈비천왕">
     </div>
     <ul class="container">
         
@@ -147,15 +148,25 @@
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
+  <script type="module" src="./js/main.js"></script>
 <script>
+    
     $(window).load(function(){
-
-            $(".info-card").css("opacity","90%").css("margin-right","0")
+        $(".info-card").css("opacity","90%").css("margin-right","0")
         setTimeout(function(){
             $(".progress-bar").css("width","50%")
         },500)
+    })
+
+    $(window).ready(function(){
         
-        
+        $(".search").keyup(function() {
+            var value=$(this).val();
+            console.log(1)
+            $(".info-card").hide();
+            var temp = $(".chicken-name:contains('" + value + "')");
+            $(temp).parent().show()
+         })
     })
 </script>
 </html>
