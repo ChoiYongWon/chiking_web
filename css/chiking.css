@@ -102,13 +102,15 @@ ul.container{
     height: 3.5rem;
     background-color: #4D2B19;
     margin-top: 1.5rem;
+    margin-right: 1.5rem;
     border-radius: 0.6rem;
     text-align: left;
     padding: 0 2rem;
     font-family: 'Roboto' sans-serif;
     font-weight: bold;
     color: #fff;
-    opacity: 90%;
+    opacity: 0%;
+    transition: 0.5s ease-in;
 }
 
 .info-card .chicken-name::before{

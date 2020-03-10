@@ -149,7 +149,10 @@
   crossorigin="anonymous"></script>
 <script>
     $(window).load(function(){
-        $(".progress-bar").css("width","50%")
+        $(".info-card").css("opacity","90%").css("margin-right","0")
+        setTimeout(function(){
+            $(".progress-bar").css("width","50%")
+        },500)
     })
 </script>
 </html>
