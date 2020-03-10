@@ -166,6 +166,19 @@ ul.container{
     transition: width 1s ease;
 }
 
+.progress-wrap::after{
+    position: absolute;
+    content: attr(data-vote) "";
+    color: #fff;
+    font-family: "Roboto" sans-serif;
+    font-size: 20px;
+    right: -9rem;
+    top:-0.2rem;
+    width:3rem;
+    text-align: left;
+    opacity: 50%;
+}
+
 .info-card>img{
     width:40px;
 }
